@@ -1,0 +1,41 @@
+.image{
+    background-repeat:no-repeat;
+    height:690px;
+    width:1233px;
+    position: relative;
+    right: -373px;
+    top: 118px;
+}
+nav li{
+    margin-right: 80px;
+    padding: 30px;
+}
+.img{
+    background-repeat:no-repeat;
+    height:300px;
+    width:123px;
+    position: relative;
+    right: -50px;
+    top: 118px;
+}
+.button button {
+    font-size: large;
+    border: 10px;
+    background-color: rgb(228, 16, 16);
+    color: white;
+    width: 135px;
+    height: 63px;
+    border-radius: 30px;
+    transition: 300ms ease-in-out;
+    position: relative;
+  }
+  .button button:hover {
+    background-color: blue;
+    outline: 2px solid black;
+    color: black;
+    cursor: pointer;
+
+
+
+}
+
