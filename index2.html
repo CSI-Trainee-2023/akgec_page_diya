@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        text-wrap: wrap;
+      }
+      nav {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        justify-content: space-between;
+        padding: 0 40px;
+        align-items: center;
+      }
+      
+      ul {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        list-style: none;
+      }
+      ul li a {
+        text-decoration: none ;
+        color: #e6ee95;
+        font-size: 1.1rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+      }
+      ul li a:hover {
+        color: rgb(94, 247, 91);
+        cursor: pointer;  
+      }
+      
+      .button button {
+        border: none;
+        background-color: rgb(143, 131, 233);
+        color: white;
+        width: 100px;
+        height: 35px;
+        border-radius: 30px;
+        transition: 300ms ease-in-out;
+      }
+      .button button:hover {
+        background-color: transparent;
+        outline: 2px solid black;
+        color: black;
+        cursor: pointer;
+      }
+      #collegename{
+        text-align: center;
+      }
+      header {
+        background-color: #333;
+        padding: 20px;
+        color: #fff;
+      }
+
+      /* Logo styles */
+      .logo {
+        max-width: 100px;
+      }
+    </style>
+  
+
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Page Title</h1>
+      </header>
+        
+    <div id="collegename">
+        <img src="logo.jpg" alt="data:image/jpeg;base64,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" />
+        <h1 id="collegename"> AJAY KUMAR GARG ENGINEERING COLLEGE</h1>
+    <p id="collegename">(Affiliated to Dr. APJ Abdul Kalam Technical University,Lucknow)</p>
+    </div>
+    <nav>
+        <img src="LOGO.png" alt="" srcset="">
+        <ul>
+          <li><a href="http://">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#footer">Department</a></li>
+          <li><a href="http://">Acadmics</a></li>
+        </ul>
+        <a href="http://" class="button"><button>AKGEC ERP</button></a>
+      </nav>
+</body>
+</html>
